@@ -13,7 +13,6 @@ a:hover {
     color: red;
 }
 input {
-    display: none;
     font: 1.1em tahoma, arial, sans-serif;
 }
 input:focus,
@@ -126,6 +125,20 @@ h3 {
     display: block
 }
 #manual_pwd {
+    border: none;
+    width: 80%;
+    margin-left: 35px;
+    padding: 10px 0px 10px 10px;
+    display: block
+}
+#manual_mqtt_ip {
+    border: none;
+    width: 80%;
+    margin-left: 35px;
+    padding: 10px 0px 10px 10px;
+    display: block
+}
+#manual_mqtt_pwd {
     border: none;
     width: 80%;
     margin-left: 35px;

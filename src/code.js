@@ -197,12 +197,18 @@ async function performConnect(conntype) {
   stopRefreshAPInterval();
 
   var pwd;
+  var mqtt_id;
+  var mqtt_pwd;
   if (conntype == "manual") {
     //Grab the manual SSID and PWD
     selectedSSID = gel("manual_ssid").value;
     pwd = gel("manual_pwd").value;
+    mqtt_id = gel("manual_mqtt_ip").value;
+    mqtt_pwd = gel("manual_mqtt_pwd").value;
   } else {
     pwd = gel("pwd").value;
+    mqtt_id = gel("manual_mqtt_ip").value;
+    mqtt_pwd = gel("manual_mqtt_pwd").value;
   }
   //reset connection
   gel("loading").style.display = "block";
